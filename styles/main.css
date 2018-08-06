@@ -1,0 +1,48 @@
+html, body {
+    padding: 0;
+    margin: 0;   
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* padding: 40px 0; */
+    /* margin: 20px 0; */
+}
+
+.nav {
+    /* padding: 0 10px; */
+}
+
+.hamburger {
+    border: 1px solid #86837e;
+    width: 20px;
+    margin: 5px 0;
+
+}
+
+.headerLogo {
+    padding: 20px 0; 
+}
+
+.headerContacts {
+    text-align: right;
+}
+
+@media (max-width: 425px) {
+    .headerContacts_workHour, .headerContacts_phoneNumber {
+        display: none;
+    }
+
+    .header {
+        padding: 0 20px;       
+    }
+}
