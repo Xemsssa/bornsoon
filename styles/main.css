@@ -8,6 +8,8 @@ html, body {
     margin: 0 auto;
 }
 
+
+/* header  */
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +34,8 @@ html, body {
 .headerContacts {
     text-align: right;
 }
+
+/* banner */
 
 @media (max-width: 425px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
