@@ -18,10 +18,6 @@ html, body {
     /* margin: 20px 0; */
 }
 
-.nav {
-    /* padding: 0 10px; */
-}
-
 .hamburger {
     border: 1px solid #86837e;
     width: 20px;
@@ -43,6 +39,6 @@ html, body {
     }
 
     .header {
-        padding: 0 20px;       
+        padding: 0 20px;
     }
 }
