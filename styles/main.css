@@ -1,6 +1,9 @@
 html, body {
     padding: 0;
     margin: 0;   
+    box-sizing: border-box;
+    /* font Myriad Pro */
+    font-family: 'OpenSans', OpenSans, sans-serif;
 }
 
 .container {
@@ -35,9 +38,14 @@ html, body {
     text-align: right;
 }
 
-/* banner */
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px;
+    }
+}
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) { */
+    @media (max-width: 455px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
         display: none;
     }
@@ -45,4 +53,205 @@ html, body {
     .header {
         padding: 0 20px;
     }
+}
+
+
+/* banner */
+
+.banner {
+    padding: 20px;
+}
+
+
+.bannerImage, .bannerItem {
+   max-width: 100%;
+}
+
+.bannerItem {
+    width: 100%;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    height: 262px;
+    background-color: #fbfbfb;
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+/* sales block */
+.sales_block {
+    padding: 0 20px;
+}
+
+.sales_block:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.salesHeader_text {
+    text-transform: uppercase;
+}
+
+.salesItem {
+    text-align: center;
+    width: 45%;
+    width: 50%;
+    /* margin: 10px; */
+    float: left;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+.salesItem_image {
+    max-width: 100%;
+}
+
+.salesItem_price {
+    /* text-decoration: line-through; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.before {
+    text-decoration: line-through;
+}
+
+.discount {
+    font-weight: bold;
+    text-decoration: none'
+}
+
+.salesItem_button {
+    border: none;
+    text-transform: uppercase;
+    background-color: #b56a94;
+    color: #fff;
+    padding: 8px 40px;
+
+}
+
+
+/* boutique adress */
+
+.boutiqueAdress {
+    padding: 0 20px; 
+}
+
+.boutiqueAdress_image {
+    width: 100%;
+    max-width: 100%;
+}
+
+.boutiqueAdress_text {
+    background-color: #fdfdfd;
+    padding: 20px;
+
+}
+
+.newItems {
+    padding: 0 20px; 
+}
+
+.newItems:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.bannerBlock {
+    padding: 0 20px; 
+}
+
+.bannerBlock_first {
+    background-color: #fbfbfb;
+    max-width: 100%;
+    width: 100%;
+    height: 190px;
+}
+
+.bannerBlock_second {
+    max-width: 100%;
+    width: 100%;
+    height: 190px;
+    background-color: #eaeaea;
+}
+
+
+/* news block */
+.news {
+    padding: 0 20px;
+}
+
+.newsBlock_image {
+    max-width: 100%;
+}
+
+.newsBlock {
+    background-color: #fbfbfb;
+
+}
+
+.newsBlock_text {
+    padding: 0 20px;
+}
+
+.newBlock_seeMore {
+    text-decoration: none;
+    color: #b56a94;
+}
+
+
+.newBlock_seeMore:hover {
+    text-decoration: dashed;
+}
+
+/* exclusive */
+
+.exclusive {
+    padding: 0 20px;
+}
+
+/* footer */
+
+.footer {
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    background-color: #fbfbfb;
+    padding: 40px;
+}
+
+.footerSubscribe form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.footerSubscribe_input {
+    background-image: url('../images/email.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border: none;
+    padding: 5px 10px 5px 30px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.footerSubscribe_button {
+    text-transform: uppercase;
+    border: none;
+    background-color: #b56a94;
+    color: #fff;
+
+    padding: 10px 20px;
+}
+
+.footerSiteMap_text {
+    text-decoration: none;
+    color: #000;
 }
