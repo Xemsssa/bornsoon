@@ -225,42 +225,81 @@ html, body {
     content: "";
     display: block;
 }
-
 .bannerBlock {
     /* padding: 0 20px;  */
+    max-width: 100%;
+    width: 100%;
+    height: 190px;
+    margin-bottom: 55px;
 }
+
+@media (min-width: 455px) {
+    .bannerBlock {
+        height: 440px;
+    }
+}
+
 
 .bannerBlock_first {
     background-color: #fbfbfb;
-    max-width: 100%;
-    width: 100%;
-    height: 190px;
+   
 }
 
 .bannerBlock_second {
-    max-width: 100%;
-    width: 100%;
-    height: 190px;
     background-color: #eaeaea;
 }
 
 
+
 /* news block */
-.news {
-    /* padding: 0 20px; */
-}
 
 .newsBlock_image {
     max-width: 100%;
-}
-
-.newsBlock {
-    background-color: #fbfbfb;
-
+    width: 100%;
 }
 
 .newsBlock_text {
-    /* padding: 0 20px; */
+    margin-bottom: 35px;
+}
+
+.newsBlock_text img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.newsHeader_text {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.newsHeader_desc {
+    margin-bottom: 55px;
+}
+
+.newsBlock {
+    /* background-color: #fbfbfb; */
+
+}
+
+
+.newsBlock_type {
+    text-transform: uppercase;
+    color: #86837e;
+    font-size: 14px;
+    /* font-weight: bold */
+}
+
+.newsBlock_header {
+    font-weight: bold;
+}
+
+.newsBlock_button {
+    border-style: none;
+    background-color: #b56a94;
+    color: #fff;
+    padding: 5px 20px;  
 }
 
 .newBlock_seeMore {
@@ -273,11 +312,44 @@ html, body {
     text-decoration: dashed;
 }
 
+
+@media (min-width: 575px) {
+    .newsBlock_text {
+        /* width: 100%; */
+    }
+}
+
 /* exclusive */
 
 .exclusive {
     /* padding: 0 20px; */
 }
+
+.exclusive_header {
+    margin-bottom: 50px;
+    font-size: 20px;
+    /* font-weight: normal; */
+    font-weight: bold;
+}
+
+.exclusive_text {
+    line-height: 1.1em;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.exclusive_link {
+    color: #b56a94;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.exclusive_link:hover {
+    text-decoration: underline;
+    /* text-decoration: dashed; */
+}
+
 
 /* footer */
 
