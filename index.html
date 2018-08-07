@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bornsoon</title>
 
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic" type="text/css">  -->
@@ -23,7 +27,7 @@
                 <div class="hamburger"></div>
             </nav>
         
-            <div class="headerLogo">
+            <div class="headerLogo ">
                 <a href="#">
                     <img src="/images/logo.png" class="headerLogo_image" alt="Bornsoon logo">
                 </a>
@@ -51,10 +55,16 @@
     <!-- banner START -->
     <div class="container">
         <div class="banner">
-            <img src="images/banner_swimsuit.jpg" class="bannerImage" alt="banner_swimsuit">
+            <!-- <div class="row"> -->
 
-            <div class="bannerItem"></div>
-            <div class="bannerItem"></div>
+                <img src="images/banner_swimsuit.jpg" class="bannerImage col-md-12" alt="banner_swimsuit">
+
+                <div class="row bannersBlock">
+                    <div class="bannerItem col-md-6"></div>
+                    <div class="bannerItem col-md-6"></div>
+                </div>
+
+            </div>
         </div>
     </div>
     <!-- Banner END -->
@@ -63,9 +73,11 @@
     <!-- sale's block START -->
     <div class="container">
         <div class="sales_block">
-            <h3 class="salesHeader_text">распродажа</h3>
+            <h4 class="salesHeader_text">распродажа</h4>
 
-            <div class="salesItem">
+            <div class="row">
+
+            <div class="salesItem col-md-3">
                 <img src="images/item_image.png" class="salesItem_image" alt="item_image">
 
                 <p class="salesItem_name">Джинсы Angelina2</p>
@@ -79,7 +91,7 @@
                 
             </div>
 
-            <div class="salesItem">
+            <div class="salesItem col-md-3">
                     <img src="images/item_image2.png" class="salesItem_image" alt="item_image">
     
                     <p class="salesItem_name">Платье Whisper</p>
@@ -93,10 +105,10 @@
                     
                 </div>
 
-                <div class="salesItem">
+                <div class="salesItem col-md-3">
                     <img src="images/item_image3.png" class="salesItem_image" alt="item_image">
     
-                    <p class="salesItem_name">Блуза Frza</p>
+                    <p class="salesItem_name">Блуза Ezra</p>
     
                     <div class="salesItem_price">
                         <p class="before">5990 руб.</p>
@@ -107,10 +119,10 @@
                     
                 </div>
     
-                <div class="salesItem">
+                <div class="salesItem col-md-3">
                     <img src="images/item_image4.png" class="salesItem_image" alt="item_image">
     
-                    <p class="salesItem_name">Джинсы Angelina2</p>
+                    <p class="salesItem_name">Платье Hong Kong</p>
     
                     <div class="salesItem_price">
                         <p class="before">5900 руб.</p>
@@ -119,7 +131,8 @@
 
                     <button class="salesItem_button">купить</button>
                     
-                </div>    
+                </div>
+            </div>       
         </div>    
     </div>
     <!-- sale's block END -->
@@ -127,27 +140,32 @@
     <!-- Boutique Adress START -->
     <div class="container">
         <div class="boutiqueAdress">
-            <h3 class="salesHeader_text">адреса бутиков</h3>
-
-            <img src="images/adress.png" class="boutiqueAdress_image" alt="adress">
-
-            <div class="boutiqueAdress_text">
-                г.Москва
-
-                <p><img src="images/loc_icon.png" alt="loc">Кутузовский проспект, д. 18 <br> с 10:00 до 21:00
-                </p>
+            <h4 class="boutiqueAdress_header">адреса бутиков</h4>
+            <div class="row ">
+                <div class="col-md-8 boutiqueAdress_background">
+                        <img src="images/adress.png" class="boutiqueAdress_image" alt="adress">
+                </div>
                 
-                <p><img src="images/loc_icon.png" alt="loc">Ленинский проспект, д. 74 <br> с 10:00 до 21:00
-                </p>
-    
-                <p><img src="images/loc_icon.png" alt="loc">ТРК "Афимолл Сити", ул. Пресненская <br> 
-                    набережная, д. 2, 4-ый этаж<br> с 10:00 до 21:00
-                </p>
-    
-                г.Санкт-Петербург:
-    
-                <p><img src="images/loc_icon.png" alt="loc">Московский проспект д. 172 <br> с 10:00 до 21:00
-                </p>
+
+                <div class="boutiqueAdress_text col-md-4">
+                    <span class="boutiqueAdress_city">г. Москва:</span>
+
+                    <p><img src="images/loc_icon.png" class="boutiqueAdress_icon" alt="loc">Кутузовский проспект, д. 18 <br> с 10:00 до 21:00
+                    </p>
+                    
+                    <p><img src="images/loc_icon.png" class="boutiqueAdress_icon" alt="loc">Ленинский проспект, д. 74 <br> с 10:00 до 21:00
+                    </p>
+        
+                    <p><img src="images/loc_icon.png" class="boutiqueAdress_icon" alt="loc">ТРК "Афимолл Сити", ул. Пресненская <br> 
+                        набережная, д. 2, 4-ый этаж<br> с 10:00 до 21:00
+                    </p>
+        
+                    <span class="boutiqueAdress_city">г. Санкт-Петербург:</span>
+        
+                    <p><img src="images/loc_icon.png" class="boutiqueAdress_icon" alt="loc">Московский проспект д. 172 <br> с 10:00 до 21:00
+                    </p>
+                </div>
+
             </div>
            
         </div>
@@ -158,11 +176,13 @@
     <!-- New items START -->
     <div class="container">
         <div class="newItems">
-                <h3 class="salesHeader_text">новинки</h3>
+                <h4 class="boutiqueAdress_header">новинки</h4>
 
-                <div class="salesItem">
+                <div class="row">
+
+                <div class="salesItem col-md-3">
                     <img src="images/item_image.png" class="salesItem_image" alt="item_image">
-    
+
                     <p class="salesItem_name">Джинсы Angelina2</p>
     
                     <div class="salesItem_price">
@@ -171,10 +191,10 @@
                     </div>
     
                     <button class="salesItem_button">купить</button>
-                    
+                        
                 </div>
     
-                <div class="salesItem">
+                <div class="salesItem col-md-3">
                     <img src="images/item_image2.png" class="salesItem_image" alt="item_image">
     
                     <p class="salesItem_name">Платье Whisper</p>
@@ -188,7 +208,7 @@
                     
                 </div>
 
-                <div class="salesItem">
+                <div class="salesItem col-md-3">
                     <img src="images/item_image3.png" class="salesItem_image" alt="item_image">
     
                     <p class="salesItem_name">Блуза Frza</p>
@@ -202,7 +222,7 @@
                     
                 </div>
     
-                <div class="salesItem">
+                <div class="salesItem col-md-3">
                     <img src="images/item_image4.png" class="salesItem_image" alt="item_image">
     
                     <p class="salesItem_name">Джинсы Angelina2</p>
@@ -213,7 +233,9 @@
                     </div>
 
                     <button class="salesItem_button">купить</button>
-                </div> 
+                </div>
+                
+            </div>
         </div>
     </div>
     <!-- New items END -->

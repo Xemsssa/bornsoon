@@ -5,6 +5,11 @@ html, body {
     /* font Myriad Pro */
     font-family: 'OpenSans', OpenSans, sans-serif;
 }
+/* 
+* {
+    margin: 0;
+    padding: 0;
+} */
 
 .container {
     max-width: 1140px;
@@ -31,7 +36,9 @@ html, body {
 }
 
 .headerLogo {
-    padding: 20px 0; 
+    /* padding: 20px 0;  */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .headerContacts {
@@ -40,7 +47,7 @@ html, body {
 
 @media (max-width: 1200px) {
     .header {
-        padding: 20px;
+        /* padding: 20px; */
     }
 }
 
@@ -51,7 +58,7 @@ html, body {
     }
 
     .header {
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 }
 
@@ -59,12 +66,19 @@ html, body {
 /* banner */
 
 .banner {
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
-
 
 .bannerImage, .bannerItem {
    max-width: 100%;
+   padding: 0;
+   border: 1px solid red;
+   margin-bottom: 40px;
+}
+
+.bannersBlock {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .bannerItem {
@@ -74,13 +88,17 @@ html, body {
     height: 262px;
     background-color: #fbfbfb;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
-
+@media (min-width: 455px) {
+    .bannerItem {
+        height: 445px;
+    }
+}
 
 /* sales block */
 .sales_block {
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .sales_block:after {
@@ -91,6 +109,10 @@ html, body {
 
 .salesHeader_text {
     text-transform: uppercase;
+    font-weight: bold;
+    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 35px;
 }
 
 .salesItem {
@@ -101,12 +123,19 @@ html, body {
     float: left;
     /* padding: 10px; */
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 14px;
 
 }
 
 .salesItem_image {
+    width:100%;
     max-width: 100%;
+    margin-bottom: 18px;
+}
+
+.salesItem_name {
+    margin-bottom: 10px;
 }
 
 .salesItem_price {
@@ -130,7 +159,7 @@ html, body {
     text-transform: uppercase;
     background-color: #b56a94;
     color: #fff;
-    padding: 8px 40px;
+    padding: 8px 50px;
 
 }
 
@@ -138,22 +167,57 @@ html, body {
 /* boutique adress */
 
 .boutiqueAdress {
-    padding: 0 20px; 
+    /* padding: 0 20px;  */
+    margin-bottom: 35px;
+}
+
+.boutiqueAdress_header {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.boutiqueAdress_block {
+    /* background-color: #fdfdfd; */
+    padding: 0;
+}
+
+.boutiqueAdress_background {
+    background-color: #fdfdfd;
+    /* max-height: 411px; */
+    /* height: auto; */
 }
 
 .boutiqueAdress_image {
     width: 100%;
     max-width: 100%;
+    /* background-color: #fdfdfd; */
+    /* max-height: 411px; */
+    /* height: 100%; */
+}
+
+.boutiqueAdress_city {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .boutiqueAdress_text {
     background-color: #fdfdfd;
-    padding: 20px;
+    /* padding: 35px 0 25px 0; */
+    /* border: 1px solid red; */
 
 }
 
+.boutiqueAdress_icon {
+    margin-right: 10px;
+}
+
+
+/* new block */
 .newItems {
-    padding: 0 20px; 
+    /* padding: 0 20px;  */
 }
 
 .newItems:after {
@@ -163,7 +227,7 @@ html, body {
 }
 
 .bannerBlock {
-    padding: 0 20px; 
+    /* padding: 0 20px;  */
 }
 
 .bannerBlock_first {
@@ -183,7 +247,7 @@ html, body {
 
 /* news block */
 .news {
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .newsBlock_image {
@@ -196,7 +260,7 @@ html, body {
 }
 
 .newsBlock_text {
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .newBlock_seeMore {
@@ -212,7 +276,7 @@ html, body {
 /* exclusive */
 
 .exclusive {
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 /* footer */
@@ -222,7 +286,7 @@ html, body {
     justify-content: center;
     text-align: center;
     background-color: #fbfbfb;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .footerSubscribe form{
