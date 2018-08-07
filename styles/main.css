@@ -159,7 +159,7 @@ html, body {
     text-transform: uppercase;
     background-color: #b56a94;
     color: #fff;
-    padding: 8px 50px;
+    /* padding: 8px 50px; */
 
 }
 
@@ -382,7 +382,7 @@ html, body {
 @media (min-width: 455px) {
     
     .footer {
-        padding: 40px;
+        padding: 40px 0;
     }
 
     .foorterSocial {
@@ -454,6 +454,8 @@ html, body {
 
 .footerNav {
     text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .about, .partnership, .usefull, .info {
