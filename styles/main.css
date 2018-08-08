@@ -348,6 +348,7 @@ html, body {
 
 .exclusive_link:hover {
     text-decoration: underline;
+     color: #b56a94;
     /* text-decoration: dashed; */
 }
 
@@ -422,6 +423,7 @@ html, body {
     padding: 9px 10px 9px 35px;
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
+    background-color: #fbfbfb;
 }
 
 @media (min-width: 455px) {
