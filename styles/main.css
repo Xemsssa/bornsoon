@@ -47,12 +47,6 @@ html, body {
     text-align: right;
 }
 
-@media (max-width: 1200px) {
-    .header {
-        /* padding: 20px; */
-    }
-}
-
 /* @media (max-width: 425px) { */
     @media (max-width: 455px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
@@ -68,27 +62,108 @@ html, body {
 /* navigation */
 .navigation {
     background-color: #b56a94;
+    /* display: none; */
 }
 
-.navigation_element {
+.navbar {
+    display: none;
+}
+
+.navigationMenu {
+    display: flex;
+    list-style: none;
+}
+
+.navigationMenu_element {
     color: #fff;
     text-transform: uppercase;
+    position: relative;
+}
+
+.navigationMenu_icon{
+    height: 12px;
+    /* height: 20px; */
+    width: 12px;
+    /* width: 20px; */
+    margin-left: 5px;
+    position: relative;
+    /* top: 6px; */
+}
+
+.dropdown {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-right: 0px;
+    position: relative;
 }
 
 .dropdown:hover {
     background-color: #a46086;
-  
 }
 
-.dropdown:hover .navigation_element {
+.dropdown:hover .navigationMenu_element {
     color: #fff;
     text-decoration: none;
 }
 
-.dropdown-menu {
-    /* display: none; */
+.dropdown:hover .dropdownMenu{
+    display: block;
+}
+.dropdownMenu {
+    font-size: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 1140px;
+    max-width: 1140px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    /* margin: .125rem 0 0; */
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.15); */
+    /* border-radius: .25rem; */
 }
 
+.dropdownMenu ul {
+    list-style: none;
+    
+}
+
+.dropdownMenu_header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.navBarBlock_element {
+    width: 20%;
+    float: left;
+    font-size: 14px;
+}
+
+.navBarBlock_element ul {
+    margin-bottom: 20px;
+    line-height: 1.8em;
+}
+
+.navBarBlock_element a {
+    color: #000;
+}
+
+
+.navBarBlock_element a:hover{
+    color: #000;
+    text-decoration: none;
+}
 
 /* banner */
 
@@ -99,7 +174,7 @@ html, body {
 .bannerImage, .bannerItem {
    max-width: 100%;
    padding: 0;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    margin-bottom: 40px;
 }
 
