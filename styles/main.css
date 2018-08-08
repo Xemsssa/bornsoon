@@ -1,9 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 html, body {
     padding: 0;
     margin: 0;   
     box-sizing: border-box;
     /* font Myriad Pro */
-    font-family: 'OpenSans', OpenSans, sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
 }
 /* 
 * {
@@ -63,6 +65,31 @@ html, body {
 }
 
 
+/* navigation */
+.navigation {
+    background-color: #b56a94;
+}
+
+.navigation_element {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dropdown:hover {
+    background-color: #a46086;
+  
+}
+
+.dropdown:hover .navigation_element {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    /* display: none; */
+}
+
+
 /* banner */
 
 .banner {
@@ -88,6 +115,7 @@ html, body {
     height: 262px;
     background-color: #fbfbfb;
     float: left;
+    float: right;
     margin-bottom: 35px;
 }
 @media (min-width: 455px) {
@@ -95,6 +123,12 @@ html, body {
         height: 445px;
     }
 }
+
+/* @media(min-width: 992px) {
+    .col-md-6 {
+        float: right !important;
+    }
+} */
 
 /* sales block */
 .sales_block {
