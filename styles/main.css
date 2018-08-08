@@ -47,22 +47,80 @@ html, body {
     text-align: right;
 }
 
+.headerContacts a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.headerContacts_theme {
+    display: flex;
+    align-items: center;
+}
+
+.headerContacts_image{
+    margin-right: 10px;
+}
+
+.headerContacts_text {
+    text-decoration: none;
+    color: #86837e;
+
+}
+
+.headerContacts_phoneNumber {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.headerUser_image::after {
+    /* background-image: url('../images/divider.svg') */
+}
+
+.headerBasket a:hover{
+    text-decoration: none;
+}
+
+.header_divider {
+    margin: 16px;
+}
+
 /* @media (max-width: 425px) { */
-    @media (max-width: 455px) {
+@media (max-width: 455px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
         display: none;
     }
-
-    .header {
-        /* padding: 0 20px; */
+    
+    .headerUser_image, .headerFavorite_image {
+        display: none;
     }
+}
+
+@media (min-width: 765px) {
+    .header_hamburger {
+        display: none;
+    }
+
+    .headerContacts_image {
+        background-image: url('../images/phone_fill.svg');
+    }
+
+    .headerLogo{
+        /* position: relative; */
+        /* left: 42%; */
+    }
+
 }
 
 
 /* navigation */
 .navigation {
     background-color: #b56a94;
-    /* display: none; */
+    display: none;
+}
+
+.navigationHeader{
+    display: flex;
+    justify-content: space-between
 }
 
 .navbar {
@@ -163,6 +221,27 @@ html, body {
 .navBarBlock_element a:hover{
     color: #000;
     text-decoration: none;
+}
+
+.search_input {
+    background-image: url("../images/search.svg");
+    background-color: #b56a94;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border: none;
+    background-size: 15px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.search {
+    padding-top: 6px;
+}
+
+@media(min-width: 765px) {
+    .navigation {
+        display: block;
+    }
 }
 
 /* banner */
@@ -529,15 +608,24 @@ html, body {
     background-repeat: no-repeat;
     background-position: 8px;
     border: none;
-    padding: 9px 10px 9px 35px;
+    padding: 9px 0px 9px 0px;
+    color: #000;
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
+    margin-right: 15px;
     background-color: #fbfbfb;
+    background-position: 95%;
+    background-position: 100%;
+}
+
+.footerSubscribe_form {
+    display: flex;
+    justify-content: center
 }
 
 @media (min-width: 455px) {
     .footerSubscribe_form{
-        display: flex;
+        /* display: flex; */
     }
 
     .footerSubscribe_input {
