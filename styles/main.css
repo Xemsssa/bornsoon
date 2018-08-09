@@ -84,6 +84,46 @@ html, body {
     margin: 16px;
 }
 
+.headerFavorite, .headerBasket {
+    position: relative;
+}
+
+.headerFavorite_counter, .headerBasket_counter{
+    position: absolute;
+    background-color: #a46086;
+    top: 75%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.headerFavorite_count, .headerBasket_count {
+    color: #fff;
+    font-size: 10px;
+}
+
+
+.header_divider {
+    display: none;
+}
+
+.headerUser {
+    display: none;
+}
+
+.headerFavorite {
+    display: none;
+}
+
+.headerBasket_image, .headerUser_image {
+    width: 30px;
+}
+
 /* @media (max-width: 425px) { */
 @media (max-width: 455px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
@@ -91,6 +131,14 @@ html, body {
     }
     
     .headerUser_image, .headerFavorite_image {
+        display: none;
+    }
+
+    .header_divider {
+        display: none;
+    }
+
+    .headerUser, .headerFavorite {
         display: none;
     }
 }
@@ -109,6 +157,17 @@ html, body {
         /* left: 42%; */
     }
 
+    .header_divider {
+        display: inline;
+    }
+
+    .headerUser {
+        display: inline;
+    }
+
+    .headerFavorite {
+        display: inline;
+    }
 }
 
 
@@ -238,6 +297,10 @@ html, body {
     padding-top: 6px;
 }
 
+.search_input::placeholder {
+    color: #fff;
+}
+
 @media(min-width: 765px) {
     .navigation {
         display: block;
@@ -347,7 +410,7 @@ html, body {
     text-transform: uppercase;
     background-color: #b56a94;
     color: #fff;
-    /* padding: 8px 50px; */
+    padding: 8px 20px;
 
 }
 
@@ -555,6 +618,12 @@ html, body {
     margin-bottom: 30px;
 }
 
+.footerSocial_icon {
+    width: 30px;
+}
+
+
+
 .salesHeader_text {
     margin-bottom: 10px;
 }
@@ -568,7 +637,7 @@ html, body {
     margin-bottom: 20px;
 }
 
-@media (min-width: 455px) {
+@media (min-width: 765px) {
     
     .footer {
         padding: 40px 0;
@@ -618,14 +687,20 @@ html, body {
     background-position: 100%;
 }
 
+.footerSubscribe_input::placeholder {
+    color: #000;
+}
 .footerSubscribe_form {
-    display: flex;
+    /* display: flex; */
     justify-content: center
 }
 
-@media (min-width: 455px) {
+/* @media (min-width: 455px) { */
+    
+@media (min-width: 765px) {
     .footerSubscribe_form{
-        /* display: flex; */
+        display: flex;
+        /* flex-direction: column; */
     }
 
     .footerSubscribe_input {
