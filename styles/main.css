@@ -48,6 +48,10 @@ html, body {
     padding-bottom: 20px;
 }
 
+.header_hamburger {
+
+}
+
 .headerContacts {
     text-align: right;
 }
@@ -244,7 +248,7 @@ html, body {
 }
 
 .navigationMenu {
-    display: flex;
+    /* display: flex; */
     list-style: none;
 }
 
@@ -349,7 +353,7 @@ html, body {
     border-bottom: 1px solid #fff;
     color: #fff;
     font-size: 14px;
-    width: 200px;
+    /* width: 200px; */
 }
 
 .search {
@@ -368,8 +372,17 @@ html, body {
     .headerContacts_text {
         text-align: left;
     }
+
+    .navigationMenu {
+        display: flex;
+    }
 }
 
+@media(min-width: 800px) {
+    .navigation {
+        /* display: block; */
+    }
+}
 /* banner */
 
 .banner {
@@ -455,7 +468,7 @@ html, body {
 .salesItem_price {
     /* text-decoration: line-through; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     justify-content: space-evenly;
     text-align: center;
 }
@@ -825,4 +838,8 @@ html, body {
 .footerSiteMap_text {
     text-decoration: none;
     color: #000;
+}
+
+.toggle {
+    display: block;
 }
