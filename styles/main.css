@@ -5,7 +5,7 @@ html, body {
     margin: 0;   
     box-sizing: border-box;
     /* font Myriad Pro */
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'Open Sans', 'sans-serif' !important;
 }
 /* 
 * {
@@ -14,7 +14,7 @@ html, body {
 } */
 
 .container {
-    max-width: 1140px;
+    max-width: 1140px !important;
     margin: 0 auto;
 }
 
@@ -269,10 +269,15 @@ html, body {
 }
 
 .dropdown {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-size: 14px;
     margin-right: 0px;
     position: relative;
+    margin-right: 20px;
+}
+
+.navbar .navbar-expand-lg {
+    padding: 0;
 }
 
 .dropdown:hover {
@@ -284,9 +289,12 @@ html, body {
     text-decoration: none;
 }
 
-.dropdown:hover .dropdownMenu{
-    display: block;
+.nav-item:hover .dropdown-menu.show{
+    display: block !important;
 }
+
+
+
 .dropdownMenu {
     font-size: 10px;
     position: absolute;
@@ -364,6 +372,19 @@ html, body {
     color: #fff;
 }
 
+.search_form {
+    padding: 0 !important;
+    background-image: url('../images/search.svg') !important;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 16px;
+    width: 16px;
+}
+
+.search_form::placeholder {
+    color: #fff !important;
+}
+
 @media(min-width: 765px) {
     .navigation {
         display: block;
@@ -383,6 +404,8 @@ html, body {
         /* display: block; */
     }
 }
+
+
 /* banner */
 
 .banner {
@@ -394,6 +417,24 @@ html, body {
    padding: 0;
    /* border: 1px solid red; */
    margin-bottom: 40px;
+}
+
+.bannerImage {
+    padding: 0 !important;
+}
+
+.navbar {
+    padding: 0 !important ;
+}
+
+.menu-block {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+.sub-title {
+    font-size: 14px;
 }
 
 .bannersBlock {
@@ -445,7 +486,7 @@ html, body {
 .salesItem {
     text-align: center;
     width: 45%;
-    width: 50%;
+    width: 50% !important;
     /* margin: 10px; */
     float: left;
     /* padding: 10px; */
@@ -467,7 +508,7 @@ html, body {
 
 .salesItem_price {
     /* text-decoration: line-through; */
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-around; */
     justify-content: space-evenly;
     text-align: center;
@@ -564,6 +605,10 @@ html, body {
 @media (min-width: 455px) {
     .bannerBlock {
         height: 440px;
+    }
+
+    .salesItem_price {
+        display: flex;
     }
 }
 
@@ -809,6 +854,11 @@ html, body {
     font-size: 14px;
 }
 
+.footerNav a:hover {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
 .about, .partnership, .usefull, .info {
     width: 50%;
 }
@@ -835,7 +885,21 @@ html, body {
     color: #000;
 }
 
+.footerCopyright a{
+    text-decoration: none;
+    color: #000 !important;
+}
+
 .footerSiteMap_text {
+    color: #000;
+}
+
+.footerSiteMap_text{
+    text-decoration: none;
+    color: #000;
+}
+
+.footerSiteMap_text:hover{
     text-decoration: none;
     color: #000;
 }
