@@ -20,6 +20,17 @@ html, body {
 
 
 /* header  */
+
+.headerBlock {
+    box-shadow: 0px -5px 16px;
+}
+
+@media(min-width: 765px) {
+    .headerBlock {
+        box-shadow: none;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -151,15 +162,16 @@ html, body {
 }
 
 .headerUser_image {
-    width: 30px;
+    width: 26px;
+    height: 26px;
 }
 
 
 
 .headerBasket_image {
     background-image: url('../images/basket_icon.png');
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat; 
 }
 
@@ -292,6 +304,19 @@ html, body {
     margin-right: 20px;
 }
 
+@media (max-width: 765px) {
+    .search_input {
+        display: none;
+        /* position: ; */
+    }
+
+    .dropdown {
+        width: 45%;
+        float: left;
+    }
+}
+
+
 .navbar .navbar-expand-lg {
     padding: 0;
 }
@@ -299,6 +324,10 @@ html, body {
 .dropdown:hover {
     background-color: #a46086;
 }
+/* 
+.dropdown:hover .dropdownMenu {
+    display: block;
+} */
 
 .dropdown:hover .navigationMenu_element {
     color: #fff;
@@ -309,12 +338,15 @@ html, body {
     display: block !important;
 }
 
-
+.show {
+    display: block;
+}
 
 .dropdownMenu {
     font-size: 10px;
+    position: fixed;
     position: absolute;
-    top: 100%;
+    top:100%;
     left: 0%;
     width: 1140px;
     max-width: 1140px;
@@ -426,7 +458,6 @@ html, body {
         /* display: block; */
     }
 }
-
 
 /* banner */
 
@@ -630,8 +661,9 @@ html, body {
     background-color: #fdfdfd;
     /* padding: 35px 0 25px 0; */
     /* border: 1px solid red; */
-
+    padding: 0 20px 0 0 ;
 }
+
 
 .boutiqueAdress_icon {
     margin-right: 10px;
@@ -927,7 +959,8 @@ html, body {
 
 .footerNav div {
     width: 50%;
-    /* padding: 0; */
+    padding:0;
+    padding-left: 5px;
 }
 
 .footerNav a:hover {
