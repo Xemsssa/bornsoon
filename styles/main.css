@@ -324,10 +324,10 @@ html, body {
 .dropdown:hover {
     background-color: #a46086;
 }
-/* 
-.dropdown:hover .dropdownMenu {
+
+.dropdown:hover .dropdown-menu {
     display: block;
-} */
+}
 
 .dropdown:hover .navigationMenu_element {
     color: #fff;
@@ -661,9 +661,8 @@ html, body {
     background-color: #fdfdfd;
     /* padding: 35px 0 25px 0; */
     /* border: 1px solid red; */
-    padding: 0 20px 0 0 ;
+    padding: 0 40px ;
 }
-
 
 .boutiqueAdress_icon {
     margin-right: 10px;
