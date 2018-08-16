@@ -10,7 +10,8 @@ $(document).ready(function(){
         // alert("clicked");
         
         let menu_block = $(".menu-block");
-        menu_block.toggleClass("show");
+        // menu_block.toggleClass("show");
+        menu_
         menu_block.css("display", "block !important");
         
     });
