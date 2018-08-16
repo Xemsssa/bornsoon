@@ -6,13 +6,13 @@ $(document).ready(function(){
 
     // todo
     // $(".sub-title").on('click', onClick(".menu-block"));
-    $(".sub-title").on('click', function() {
+    $(".sub-title_text").on('click', function() {
         // alert("clicked");
         
         let menu_block = $(".menu-block");
+        menu_block.toggleClass("show");
         menu_block.css("display", "block !important");
         
-        // menu_block.toggleClass("display", "block !important");
     });
     
 

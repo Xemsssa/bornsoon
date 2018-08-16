@@ -1,6 +1,6 @@
 
 .navigation {
-  background-color: #B56A94;
+  /* background-color: #B56A94; */
 }
 
 .navbar .mega-dropdown {
@@ -44,6 +44,7 @@
     .navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item:hover {
       color: #000 !important; }
   .navbar .dropdown-menu.mega-menu.v-2 .sub-title {
-    padding-bottom: 1rem;}
+    padding-bottom: 1rem;
+  }
   .navbar .dropdown-menu.mega-menu.v-2 .font-small {
     font-size: 0.85rem; }
