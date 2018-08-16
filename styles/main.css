@@ -325,7 +325,10 @@ html, body {
     font-size: 14px;
     margin-right: 0px;
     position: relative;
+
 }
+
+
 
 .search_input {
     display: none;
@@ -352,6 +355,37 @@ html, body {
     text-align: left !important;
     /* border-bottom: 1px solid #86837e; */
 }
+
+@media(max-width: 765px) {
+    .navigation {
+        color: #fff !important;
+    }
+
+    .navigation .container {
+        padding: 0;
+    }
+
+    .dropdown{
+        width: 50%;
+        color:#000;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+
+    .navbar-nav {
+        display: inline-block !important;
+        padding-top: 20px;
+    }
+
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    .menu-block {
+        display: none !important;
+    }
+}
+
 
 
 #el .dropdownMenu_header {
@@ -428,9 +462,9 @@ html, body {
     display: block;
 }
 
-.nav-item:hover .dropdown-menu.show{
+/* .nav-item:hover .dropdown-menu.show{
     display: block !important;
-}
+} */
 
 .show {
     display: block;
@@ -514,9 +548,9 @@ html, body {
 .search_form {
     padding: 0 !important;
     background-image: url('../images/search.svg') !important;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    height: 16px;
+    background-repeat: no-repeat !important;
+    background-position: 100% !important;
+    /* height: 16px; */
     width: 16px;
     
 }
@@ -763,7 +797,7 @@ html, body {
     /* padding: 35px 0 25px 0; */
     /* border: 1px solid red; */
     padding: 0 40px ;
-    padding-left: 40px;
+    padding-left: 40px !important;
 }
 
 .boutiqueAdress_icon {

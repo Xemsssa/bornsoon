@@ -1,38 +1,25 @@
 // Mega menu slide down on hover with carousel
 
 $(document).ready(function(){
-    $(".header_hamburger").on('click', function() {
-        // console.log("clicked");
-        let navigation = $(".navigation");
-        // console.log(menu);
-        navigation.toggleClass("toggle");
-    })
+    $(".header_hamburger").on('click', onClick(".navigation"));
 
-    
-    
 
-    $(".dropdown").on('mouseenter', function() {
-
-        let el = $("#el");
-
-        let text =  $(this).find('.dropdownMenu_header');
-
-        // console.log(el);
+    // todo
+    // $(".sub-title").on('click', onClick(".menu-block"));
+    $(".sub-title").on('click', function() {
+        // alert("clicked");
         
+        let menu_block = $(".menu-block");
+        menu_block.css("display", "block !important");
         
-        // let el = document.getElementById('el');
-        for (let length = text.length; length >= 0; length-- ) {
-            // console.log(el[length]);
-            el.append(text[length]);
-        }
+        // menu_block.toggleClass("display", "block !important");
     });
+    
 
-    $(".dropdown").mouseleave( function() {
-        // alert('leave');
-
-        let el = $("#el");
-        // el = '';
-    });
-
+    function onClick(element) {
+        console.log("clicked");
+        let menu_block = $(element);
+        menu_block.toggleClass("toggle");
+    }
 
 });
