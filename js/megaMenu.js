@@ -6,21 +6,22 @@ $(document).ready(function(){
 
     // todo
     // $(".sub-title").on('click', onClick(".menu-block"));
-    $(".sub-title_text").on('click', function() {
+    $(".sub-title").on('click', function() {
         // alert("clicked");
-        
-        let menu_block = $(".menu-block");
-        // menu_block.toggleClass("show");
-        menu_
-        menu_block.css("display", "block !important");
-        
+        let that = this;
+
+        let el = $(that).siblings().first();
+        // let el = $(that).siblings('ul');
+        // let el = $(that).siblings('ul:first');
+        // console.log("done " + el);
+        el.toggle();
     });
     
 
     function onClick(element) {
-        console.log("clicked");
+        // console.log("clicked");
         let menu_block = $(element);
-        menu_block.toggleClass("toggle");
+        menu_block.toggle();
     }
 
 });
