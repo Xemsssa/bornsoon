@@ -2,7 +2,11 @@
 
 $(document).ready( () => {
     // hamburgermobile menu
-    $(".header_hamburger").on('click', onClick(".navigation"));
+    // $(".header_hamburger").on('click', onClick(".navigation"));
+    // if ($(".header_hamburger").hasClass("collapsed"))) {
+        $(document).
+        $(".header_hamburger").on('click', onClick(".navigation"));
+    // }
 
     // show  submenu when click on title
     $(".sub-title").on('click', function () {

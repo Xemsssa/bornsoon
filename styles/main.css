@@ -808,9 +808,9 @@ html, body {
 
 .salesItem_favorite.fav {
     background-image: url('../images/fav.png');
-    background-repeat: no-repeat;
-    background-size: 55%;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: 55%; */
+    /* background-position: enter; */
 }
 
 .salesItem_icon {
@@ -1207,7 +1207,7 @@ html, body {
 }
 
 .footerNav div {
-    width: 45%;
+    /* width: 45%; */
     /* width: 50%; */
     padding:0;
     padding-left: 5px;
@@ -1266,4 +1266,10 @@ html, body {
 
 .toggle, .show{
     display: block;
+}
+
+@media(min-width: 765px) {
+    .footerNav div {
+        width: 45%;
+    }
 }
