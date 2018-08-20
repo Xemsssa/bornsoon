@@ -9,11 +9,12 @@ $(document).ready( () => {
     // var isVisible = $('.header_hamburger').style.display == "block";
     // console.log(isVisible);
 
-    // if (isVisible) {
+    if (!($(".header_hamburger").css("display")== "none")) {
         // alert("visible");
         $(".header_hamburger").on('click', onClick(".navigation"));
-    // } else {
-        //  alert("inVisible");
+    } 
+    // else {
+    //     alert("inVisible");
     // } 
 
 
