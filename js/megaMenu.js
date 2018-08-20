@@ -2,11 +2,21 @@
 
 $(document).ready( () => {
     // hamburgermobile menu
+    // console.log($(".header_hamburger"));
     // $(".header_hamburger").on('click', onClick(".navigation"));
-    // if ($(".header_hamburger").hasClass("collapsed"))) {
-        $(document).
+
+
+    // var isVisible = $('.header_hamburger').style.display == "block";
+    // console.log(isVisible);
+
+    // if (isVisible) {
+        // alert("visible");
         $(".header_hamburger").on('click', onClick(".navigation"));
-    // }
+    // } else {
+        //  alert("inVisible");
+    // } 
+
+
 
     // show  submenu when click on title
     $(".sub-title").on('click', function () {
