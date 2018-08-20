@@ -7,8 +7,12 @@ $(document).ready( () => {
     // show  submenu when click on title
     $(".sub-title").on('click', function () {
         let that = this;
-        let el = $(that).siblings().first();
-        el.toggle();
+        let el = $(that).siblings("ul").first();
+        let arrows = $(that).children('div');
+        // let arrows = $(that).children('.sub-title_icon');
+        // $(arrows).children();
+        // el.toggle(arrows);
+        // $(arrows).css("transform",  "rotate(90deg)");
     });
     
     // change icon when clicking on favorite icon
