@@ -382,14 +382,15 @@ html, body {
     }
 
     .menu-block {
-        /* display: none ; */
+        display: block ;
     }
 }
 
-.menu-block {
-    display: none ;
+@media(max-width: 765px) {
+    .menu-block {
+      display: none ;
+    }
 }
-
 
 #el .dropdownMenu_header {
     list-style: none;
@@ -664,6 +665,8 @@ html, body {
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 1.6em;
+
+    /* display: none; */
 }
 .sub-title {
     display:flex;

@@ -8,10 +8,11 @@ $(document).ready( () => {
     $(".sub-title").on('click', function () {
         let that = this;
         let el = $(that).siblings("ul").first();
-        let arrows = $(that).children('div');
+        // let arrows = $(that).children('div').children("img");
         // let arrows = $(that).children('.sub-title_icon');
-        // $(arrows).children();
-        // el.toggle(arrows);
+        // $(arrow).children();
+        // console.log($(arrows).children());
+        el.toggle();
         // $(arrows).css("transform",  "rotate(90deg)");
     });
     
