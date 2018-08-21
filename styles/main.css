@@ -632,6 +632,51 @@ html, body {
     }
 }
 
+
+/* breadcrumb */
+/*  86837e */
+/* Style the list */
+.breadcrumb {
+    border-radius: 0;
+    background-color: #fff; 
+}
+
+ul.breadcrumb {
+    padding: 35px 16px 0px 0;
+    list-style: none;
+    /* background-color: #eee; */
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    color: #86837e;
+    font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #86837e;
+    content: "/\00a0";
+    padding: 20px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #86837e;
+    text-decoration: none;
+    /* padding-right:20px; */
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #86837e;
+    text-decoration: underline;
+}
+
+
+
 /* banner */
 
 .banner {
@@ -726,6 +771,8 @@ html, body {
         float: right !important;
     }
 } */
+
+
 
 /* sales block */
 .sales_block {
@@ -855,6 +902,12 @@ html, body {
         right: 5%;
     }
  } 
+
+
+ /* catalogItem */
+ .catalogItem {
+     border:1px solid;
+ }
 
 
 /* boutique adress */
