@@ -656,10 +656,10 @@ ul.breadcrumb li {
 
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
-    padding: 8px;
+    /* padding: 8px; */
     color: #86837e;
     content: "/\00a0";
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* Add a color to all links inside the list */
@@ -672,9 +672,14 @@ ul.breadcrumb li a {
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
     color: #86837e;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+@media(min-width: 765px) {
+    ul.breadcrumb li+li:before {
+        padding: 20px;
+    }
+}
 
 
 /* banner */
@@ -901,13 +906,99 @@ ul.breadcrumb li a:hover {
         bottom: 8%;
         right: 5%;
     }
- } 
+} 
 
 
- /* catalogItem */
- .catalogItem {
-     border:1px solid;
- }
+/* catalogItem */
+.catalogItems {
+    display: none;
+}
+
+.catalogItem {
+    /* border:1px solid; */
+    border-bottom: 2px solid #fbfbfb;
+    padding: 14px 0;
+    list-style: none;
+}
+
+.catalogItem_link{
+    text-decoration: none;
+        font-size: 14px;
+}
+
+.catalog h4 {
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.catalogSorting {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.catalogSorting_selectors {
+    /* display: flex; */
+    /* display: none; */
+}
+
+.catalogSorting_selectors li {
+    margin-right: 20px;
+}
+
+.catalogSorting_selector:after {
+    content: url("../images/arrow_icon.png");
+    padding: 0 10px;
+    width: 2px;
+    height: 2px;
+}
+
+@media(min-width: 765px) {
+    .catalogItems {
+        display: block;
+    }
+
+    .catalog h4 {
+        font-weight: normal;
+        font-size: 24px; 
+    }
+    
+        
+    .catalogSorting_selectors {
+        display: flex;
+    }
+}
+
+
+
+/* pagination */
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination a {
+    color: #898989;
+    float: left;
+    padding: 2px 9px;
+    text-decoration: none;
+    border: 1px solid #898989;
+    margin: 5px;
+}
+
+.pagination a:first-child, .pagination a:last-child {
+    border: none;
+}
+.pagination a.active {
+    background-color: #b56a94;
+    color: #fff;
+
+}
+
+.pagination a:hover:not(.active) {color: #b56a94;}
 
 
 /* boutique adress */
