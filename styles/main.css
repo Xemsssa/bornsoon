@@ -933,16 +933,19 @@ ul.breadcrumb li a:hover {
 }
 
 .catalogSorting {
-    display: flex;
-    justify-content: space-between;
+    /* display: none; */
+    /* display: flex; */
+    width: 100%;
+    /* justify-content: space-between; */
     list-style: none;
     font-size: 14px;
     margin-bottom: 35px;
 }
 
 .catalogSorting_selectors {
-    /* display: flex; */
+    display: grid;
     /* display: none; */
+    /* width: 100%; */
 }
 
 .catalogSorting_selectors li {
@@ -989,6 +992,10 @@ ul.breadcrumb li a:hover {
         font-size: 24px; 
     }
     
+    .catalogSorting {
+        display: flex;
+        justify-content: space-between;
+    }
         
     .catalogSorting_selectors {
         display: flex;
@@ -1001,15 +1008,17 @@ ul.breadcrumb li a:hover {
 
 .pagination {
     justify-content: center;
+    /* box-sizing: border-box;  */
+    padding-left: 15px;
 }
 
 .pagination a {
     color: #898989;
+    padding: 0px 6px;
     float: left;
-    padding: 2px 9px;
     text-decoration: none;
     border: 1px solid #898989;
-    margin: 5px;
+    margin: 0 2px;
 }
 
 .pagination a:first-child, .pagination a:last-child {
@@ -1022,6 +1031,13 @@ ul.breadcrumb li a:hover {
 }
 
 .pagination a:hover:not(.active) {color: #b56a94;}
+
+@media(min-width: 455px) {
+    .pagination a {
+        padding: 2px 9px;
+        margin: 5px;
+    }
+}
 
 
 /* salesLeader */
