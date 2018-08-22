@@ -1184,26 +1184,26 @@ ul.breadcrumb li a:hover {
     }
 }
 
-/* exclusive */
+/* text */
 
-.exclusive {
+.info {
     /* padding: 0 20px; */
 }
 
-.exclusive_header {
+.info_header {
     margin-bottom: 50px;
     font-size: 20px;
     /* font-weight: normal; */
     font-weight: bold;
 }
 
-.exclusive_text {
+.info_text {
     line-height: 1.1em;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.exclusive_link {
+.info_link {
     color: #b56a94;
     text-decoration: none;
     display: block;
@@ -1211,12 +1211,15 @@ ul.breadcrumb li a:hover {
 }
 
 
-.exclusive_link:hover {
+.info_link:hover {
     text-decoration: underline;
      color: #b56a94;
     /* text-decoration: dashed; */
 }
 
+.catalogInfo .info_header {
+    margin-bottom: 20px;
+}
 
 /* footer */
 
