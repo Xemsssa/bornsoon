@@ -946,7 +946,7 @@ ul.breadcrumb li a:hover {
 }
 
 .catalogSorting_selectors li {
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .catalogSorting_selector:after {
@@ -954,6 +954,29 @@ ul.breadcrumb li a:hover {
     padding: 0 10px;
     width: 2px;
     height: 2px;
+}
+
+.catalogSorting_dropdown {
+    padding: 0
+}
+
+.catalogSorting_dropdown:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.catalogSorting_menu {
+    border-radius: 0;
+    padding: 0px;
+    border: none;
+}
+
+.catalogSorting_menu .catalogItem {
+    padding: 5px;
+}
+
+.catalogSorting_menu a{
+    color: #000;
 }
 
 @media(min-width: 765px) {
