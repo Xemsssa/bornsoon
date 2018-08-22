@@ -962,7 +962,7 @@ ul.breadcrumb li a:hover {
     }
 
     .catalog h4 {
-        font-weight: normal;
+        /* font-weight: normal; */
         font-size: 24px; 
     }
     
@@ -999,6 +999,21 @@ ul.breadcrumb li a:hover {
 }
 
 .pagination a:hover:not(.active) {color: #b56a94;}
+
+
+/* salesLeader */
+
+.salesLeader .salesItem:last-child {
+    display: none;
+}
+
+@media(min-width: 765px) {
+   
+    .last {
+        display: none;
+    }
+}
+
 
 
 /* boutique adress */
