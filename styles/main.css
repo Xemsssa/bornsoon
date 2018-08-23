@@ -1054,6 +1054,26 @@ ul.breadcrumb li a:hover {
     }
 }
 
+
+/* product */
+
+.productImage_gallery {
+    display: flex;
+}
+
+
+@media(min-width: 765px) {
+    .productImage_gallery {
+        flex-direction: column
+    }
+
+    .productImage_gallery img{
+        width: 130px;
+        margin-bottom: 20px;
+    }
+    
+}
+
 .fa-star{
     color: #86837e;
     color: #898989;
@@ -1126,8 +1146,11 @@ ul.breadcrumb li a:hover {
 
 .tab-pane {
     padding: 20px 0;
-} 
 
+    margin-bottom: 20px;
+}
+
+.tab-pane p,
 .product_info p {
     margin-bottom: 5px;
     font-size: 14px;
