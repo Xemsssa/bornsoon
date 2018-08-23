@@ -1120,55 +1120,59 @@ ul.breadcrumb li a:hover {
     left: 0;
     border: 2px solid #dfdfdf;
     border-radius: 0;
+    /* background-image: url('../images/fav.png'); */
     /* padding: 0px 0px !important; */
 }
 
+.tab-pane {
+    padding: 20px 0;
+} 
+
 .product_info p {
     margin-bottom: 5px;
-    font-size: 16px;
-    line-height: 1.1em;
+    font-size: 14px;
+    /* line-height: 1.1em; */
 }
 
 .product_text {
     font-weight: bold;
 }
 
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.product_descriptions-item .active{
+    border-bottom: 2px solid #dfdfdf !important;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
+.nav-tabs .nav-link.active {
+    color: #000;
+    font-weight: bold;
+    /* background-color: #fff; */
     border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+    /* margin-bottom: -2px; */
+    /* border-color: #dee2e6 #dee2e6 #fff; */
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+.nav-tabs .nav-link:hover {
+    color: #000;;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
+
+.nav-tabs .nav-link {
+    border:none;
 }
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    /* padding: 6px 12px; */
-    /* border: 1px solid #ccc; */
-    /* border-top: none; */
+
+.nav-link {
+    color: #000;
+    margin-bottom: -2px;
 }
 
+.nav-link a:hover {
+    color: #000 !important;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #f9f9f9;
+}
 
 /* salesLeader */
 

@@ -729,34 +729,37 @@
     </div>
 
     <div class="product_descriptions">
-        <!-- Tab links -->
-        <ul class="nav nav-tabs">
-            <li  onclick="openCity(event, 'characteristics')">Характеристика</li>
-            <li  onclick="openCity(event, 'questions')">Вопросы</li>
-            <li  onclick="openCity(event, 'reviews')">Отзывы</li>
-        </ul>
-        
-        <!-- Tab content -->
-        <div id="characteristics" class="tabcontent active">
-            <p><span class="product_text">Артикул:</span> SL550</p>
-            <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
-            <p><span class="product_text">Страна-производитель:</span> Португалия</p>
-            <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
-        </div>
-        
-        <div id="questions" class="tabcontent">
-            <p><span class="product_text">Артикул:</span> SL550</p>
-            <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
-            <p><span class="product_text">Страна-производитель:</span> Португалия</p>
-            <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
-        </div>
-        
-        <div id="reviews" class="tabcontent">
-            <p><span class="product_text">Артикул:</span> SL550</p>
-            <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
-            <p><span class="product_text">Страна-производитель:</span> Португалия</p>
-            <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
-        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="product_descriptions-item">
+                  <a class="nav-link active" id="characteristics-tab" data-toggle="tab" href="#characteristics" role="tab" aria-controls="characteristics" aria-selected="true">Характеристика</a>
+                </li>
+                <li class="product_descriptions-item">
+                  <a class="nav-link" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="false">Вопросы</a>
+                </li>
+                <li class="product_descriptions-item">
+                  <a class="nav-link" id="rewiews-tab" data-toggle="tab" href="#rewiews" role="tab" aria-controls="rewiews" aria-selected="false">Отзывы</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                    <p><span class="product_text">Артикул:</span> SL550</p>
+                    <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
+                    <p><span class="product_text">Страна-производитель:</span> Португалия</p>
+                    <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p>
+                </div>
+                <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
+                    <p><span class="product_text">Артикул:</span> SL550</p>
+                    <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
+                    <p><span class="product_text">Страна-производитель:</span> Португалия</p>
+                    <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p>
+                </div>
+                <div class="tab-pane fade" id="rewiews" role="tabpanel" aria-labelledby="rewiews-tab">
+                    <p><span class="product_text">Артикул:</span> SL550</p>
+                    <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
+                    <p><span class="product_text">Страна-производитель:</span> Португалия</p>
+                    <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
+                </div>
+              </div>
     </div>
 
 
@@ -854,6 +857,7 @@
             </div>
         </div>
         <!-- New items END -->
+        </div>
     
 
 
