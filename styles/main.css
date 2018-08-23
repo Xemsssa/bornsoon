@@ -188,6 +188,16 @@ html, body {
     width: 26px;
 }
 
+
+.bx-basket-item-list {
+    position: absolute;
+    top: 80px;
+}
+
+.img-thumbnail {
+    border: none;
+    border-radius: 0;
+}
 /* @media (max-width: 425px) { */
 @media (max-width: 455px) {
     .headerContacts_workHour, .headerContacts_phoneNumber {
