@@ -685,17 +685,17 @@
                 <p class="discount">1893 руб.</p>
             </div>
 
-            <p>Наличие: <span>Есть</span></p>
-            <p>Цвет: <span>Черный</span></p>
+            <p class="product_text">Наличие: <span>Есть</span></p>
+            <p class="product_text">Цвет: <span>Черный</span></p>
 
             <div class="product_color">
-                <img src="images/item_image2.png" alt="image">
-                <img src="images/item_image2.png" alt="image">
-                <img src="images/item_image2.png" alt="image">
+                <img src="images/item_image2.png" class="product_image product_image_selected" alt="image">
+                <img src="images/item_image2.png" class="product_image" alt="image">
+                <img src="images/item_image2.png" class="product_image" alt="image">
             </div>
 
 
-            <select>
+            <select class="product_size">
                 <option disabled selected>Выберите размер</option>
                 <option >size1</option>
                 <option >size2</option>
@@ -709,7 +709,7 @@
             </div>
             
             <div class="product_info">
-                <h6>О товаре</h6>
+                <h6 class="product_text">О товаре</h6>
 
                 <p>Бренд: <span class="product_text">SLACKS & CO ( Англия)</span></p>
                 <p>Состав: <span class="product_text">Вискоза 33%, Полиэстер 63%, Эластан 4%</span></p>
@@ -731,27 +731,27 @@
     <div class="product_descriptions">
         <!-- Tab links -->
         <ul class="nav nav-tabs">
-            <li  onclick="openCity(event, 'London')">Характеристика</li>
-            <li  onclick="openCity(event, 'Paris')">Вопросы</li>
-            <li  onclick="openCity(event, 'Tokyo')">Отзывы</li>
+            <li  onclick="openCity(event, 'characteristics')">Характеристика</li>
+            <li  onclick="openCity(event, 'questions')">Вопросы</li>
+            <li  onclick="openCity(event, 'reviews')">Отзывы</li>
         </ul>
         
         <!-- Tab content -->
-        <div id="London" class="tabcontent active">
-                <p><span class="product_text">Артикул:</span> SL550</p>
-                <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
-                <p><span class="product_text">Страна-производитель:</span> Португалия</p>
-                <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
-        </div>
-        
-        <div id="Paris" class="tabcontent">
+        <div id="characteristics" class="tabcontent active">
             <p><span class="product_text">Артикул:</span> SL550</p>
             <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
             <p><span class="product_text">Страна-производитель:</span> Португалия</p>
             <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
         </div>
         
-        <div id="Tokyo" class="tabcontent">
+        <div id="questions" class="tabcontent">
+            <p><span class="product_text">Артикул:</span> SL550</p>
+            <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
+            <p><span class="product_text">Страна-производитель:</span> Португалия</p>
+            <p><span class="product_text">Состав:</span> Вискоза33%, Полиэстер63%, Эластан4%</p> 
+        </div>
+        
+        <div id="reviews" class="tabcontent">
             <p><span class="product_text">Артикул:</span> SL550</p>
             <p><span class="product_text">Производитель:</span> SLACKS & CO ( Англия)</p>
             <p><span class="product_text">Страна-производитель:</span> Португалия</p>
