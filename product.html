@@ -668,13 +668,14 @@
         <div class="col-md-7">
             <div class="row productImage">
                 <div class="col-sm-3 productImage_gallery">
-                    <img src="images/item_image2.png" class="product_image" alt=item_image2">
-                    <img src="images/item_image2.png" class="product_image" alt=item_image2">
-                    <img src="images/item_image2.png" class="product_image" alt=item_image2">
+                    <img src="images/item_image2.png" class="product_image" alt=item_image2" onclick="openImg(this);">
+                    <img src="images/item_image3.png" class="product_image" alt=item_image2" onclick="openImg(this);">
+                    <img src="images/item_image4.png" class="product_image" alt=item_image2" onclick="openImg(this);">
                 </div>
                 <div class="col-sm-9 productImage_big">
                     <div class="">
-                        <img src="images/item_image2.png" class="productImage_image" alt="item_image2">
+                        <img  src="images/item_image2.png" id="expandedImg" style="width:100%">
+                        <!-- <img src="images/item_image2.png" class="productImage_image" alt="item_image2"> -->
                     </div>
                 </div>
             </div>
@@ -688,7 +689,6 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
                 <span>(<span class="starRating_count">13</span>)</span>
-                
             </div>
             <div class="salesItem_price product_price">
                 <p class="before">5990 руб.</p>
@@ -978,23 +978,25 @@
     
     <!-- footer END -->
     
-        <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-        <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+        <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
+
+
+    <!-- <script src="js/megaMenu.js"></script> -->
+    <!-- <script src="js/tabs.js"></script> -->
     
-         <!-- SCRIPTS -->
-        <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
-    
-    
-        <!-- <script src="js/megaMenu.js"></script> -->
-        <script src="js/tabs.js"></script>
+    <script src="js/productGallery.js"></script>
+
     </body>
     </html>
     
-
