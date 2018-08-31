@@ -1031,6 +1031,9 @@ ul.breadcrumb li a:hover {
     /* padding: 0; */
 }
 
+.basketTable_header:first-child {
+    text-align: left;
+}
 
 .productInBasket_text p {
     margin-bottom: 40px
@@ -1050,6 +1053,12 @@ ul.breadcrumb li a:hover {
     display: flex;
     align-items: center;
     margin: 0;
+    text-align:center;
+}
+
+.productInBasket_manipulation {
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="number"] {
@@ -1125,6 +1134,7 @@ input[type="number"] {
 
 .totalCost {
     padding: 35px;
+    margin-bottom: 70px;
 }
 
 .totalCost_border{
@@ -1143,6 +1153,27 @@ input[type="number"] {
     padding: 5px 0px;
     border: none;
     width: 100%;
+}
+
+
+.productInfo_block {
+    padding: 20px;
+}
+
+.productInfo {
+    display: flex;
+    align-items: top;
+    margin-bottom: 15px
+}
+
+.productInfo_image {
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.productInfo_text {
+    font-size:12px;
+    line-height: 1.2em;
 }
 
 .divider {
