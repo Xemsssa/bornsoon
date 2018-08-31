@@ -1145,6 +1145,11 @@ input[type="number"] {
     width: 100%;
 }
 
+.divider {
+    border: 1px solid #dfdfdf;
+    margin: 20px 0;
+}
+
 
 
 /* pagination */
