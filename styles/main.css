@@ -1267,6 +1267,7 @@ input[type="number"] {
     width: 100%;
     margin-bottom: 20px;
     border: 2px solid #dfdfdf;
+    padding: 0 10px;
     
 }
 
@@ -1287,9 +1288,11 @@ input[type="number"] {
 
 .delivery_selected{
     border: 2px solid #a46086;
-    /* background: url("../images/selected_icon.png"); */
-    /* background-position: top 10px right 10px; */
-    /* background-repeat: no-repeat; */
+    background: url("../images/selected_icon.png");
+    background-position: top 10px right 10px;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+    padding-bottom: 2px;
 }
 
 .delivery_icon{
@@ -1313,7 +1316,12 @@ input[type="number"] {
     padding-bottom: 2px;
 }
 
-.delivery_type:hover .delivery_icon{
+.delivery_type:hover .delivery_icon {
+    -webkit-filter: opacity(1); 
+    filter: opacity(1);
+}
+
+.hover {
     -webkit-filter: opacity(1); 
     filter: opacity(1);
 }
@@ -1322,6 +1330,7 @@ input[type="number"] {
     display: flex;
     margin-bottom: 20px;
     align-items: center;
+    padding: 10px 0;
 }
 
 .paymentInfo_image {
@@ -1347,8 +1356,8 @@ input[type="number"] {
     /* background: url("../images/selected_icon.png"); */
     /* background-position: top 10px right 10px; */
     /* background-repeat: no-repeat; */
-    margin-top: -2px;
-    padding-bottom: 2px;
+    /* margin: -2px; */
+    /* padding: 20px 0; */
 }
 
 .packagingInfo:hover .paymentInfo_image {
