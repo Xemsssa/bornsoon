@@ -20,7 +20,6 @@ $(document).ready(() =>{
         // todo write function
         }
         selected(e, ".delivery_icon");
-        
     });
 
     $(".paymentInfo").on("click", (e) => {
@@ -28,7 +27,7 @@ $(document).ready(() =>{
     });
 
     $(".packagingInfo").on("click",(e) => {
-        selected(e, ".paymentInfo_image");
+        selected(e, ".packagingInfo_image");
     });
 
 
@@ -43,5 +42,5 @@ $(document).ready(() =>{
         el.find(element).addClass("hover");
 
         el.siblings().find(element).css("filter", "opacity(.1)");
-    }    
+    }; 
 });

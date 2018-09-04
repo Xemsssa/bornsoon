@@ -678,23 +678,23 @@
 
                         <div class="row">
                             <div class="col-md-3">
-                                Телефон*
+                                <label for="phone">Телефон*</label>
                             </div>
                             <div class="col-md-9" >
-                                <input type="tel"  class="deliveryForm_input">
+                                <input type="tel"  id="phone" class="deliveryForm_input">
                             </div>
 
                             <div class="col-md-3">
-                                Ваш e-mail*
+                                <label for="mail">Ваш e-mail*</label>
                             </div>
                             <div class="col-md-9">
-                                <input type="email"  class="deliveryForm_input">
+                                <input type="email" id="mail" class="deliveryForm_input">
                             </div>
                             <div class="col-md-3">
-                                Имя и фамилия*
+                                <label for="name">Имя и фамилия*</label>
                             </div>
                             <div class="col-md-9">
-                                <input type="text"  class="deliveryForm_input">
+                                <input type="text" id="name" class="deliveryForm_input">
                             </div>
                         </div>
                     </div>
@@ -707,45 +707,48 @@
                         <h6>Адрес доставки</h6>
 
                         <div class="row">
-                            <div class="col-md-3">
-                                Страна*
+                            <div  class="col-md-3">
+                                <label for="autocomplete">Страна*</label>
                             </div>
-                            <div class="col-md-9">
-                                <input type="text" placeholder="Казахстан" class="deliveryForm_input">
+                           
+
+                            <div id="locationField"  class="col-md-9">
+                                <input id="autocomplete" placeholder="Казахстан" type="text" class="deliveryForm_input"/>
                             </div>
 
+
                             <div class="col-md-3">
-                                Город*
+                                <label for="town">Город*</label>
                             </div>
                             <div class="col-md-9">
-                                <input type="text"  placeholder="Тюмень, Тюменская область" class="deliveryForm_input">
+                                <input type="text" id="town" placeholder="Тюмень, Тюменская область" class="deliveryForm_input">
                             </div>
                             <div class="col-md-3">
-                                Улица*
+                                <label for="street">Улица*</label>
                             </div>
                             <div class="col-md-9">
-                                <input type="text"  class="deliveryForm_input">
+                                <input type="text" id="street" class="deliveryForm_input">
                             </div>
 
                             <!-- <div class="row"> -->
                             <div class="col-md-3">
-                                Дом*
+                                <label for="house">Дом*</label>
                             </div>
                             <div class="col-md-3">
-                                <input type="text"  class="deliveryForm_input">
+                                <input type="text" id="house" class="deliveryForm_input">
                             </div>
                             <div class="col-md-3">
-                                Квартира*
+                                <label for="appartament">Квартира*</label>
                             </div>
                             <div class="col-md-3">
-                                <input type="number" class="deliveryForm_input">
+                                <input type="number" id="appartament" class="deliveryForm_input">
                             </div>
                             <!-- </div> -->
                             <div class="col-md-3">
-                                Индекс*
+                                <label for="postIndex">Индекс*</label>
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="deliveryForm_input">
+                                <input type="text" id="postIndex" class="deliveryForm_input">
                             </div>
                         </div>
                     </div>
@@ -847,10 +850,10 @@
                         <div class="packagingInfo_block">
                             <a class="packagingInfo">
                                 <div class="">
-                                    <img src="images/gift_icon.svg" class="paymentInfo_image" alt="gift_icon">
+                                    <img src="images/gift_icon.svg" class="packagingInfo_image" alt="gift_icon">
                                 </div>
 
-                                <div>
+                                <div class="packagingInfo_desc">
                                     <span class="packagingInfo_header">Подарочная</span>
                                     <p class="packagingInfo_text">
                                             Возможны различные варианты упаковки. На ваше усмотрение можно дополнить
@@ -860,11 +863,11 @@
                             </a>    
         
                             <a class="packagingInfo">
-                                <div class="paymentInfo_image">
-                                    <img src="images/deliveryBox.svg" class="" alt="paymentCard_icon">
+                                <div class="">
+                                    <img src="images/deliveryBox.svg" class="packagingInfo_image" alt="paymentCard_icon">
                                 </div>
                                 
-                                <div>
+                                <div class="packagingInfo_desc">
                                     <span class="packagingInfo_header">Стандартная</span>
                                     <p class="packagingInfo_text"></p>
                                             Фирменный пакет Bornsoon</p>
@@ -1042,12 +1045,19 @@
 
 
     <!-- <script src="js/megaMenu.js"></script> -->
+
     <!-- <script src="js/tabs.js"></script> -->
     
-    <script src="js/productGallery.js"></script>
+    <!-- gallery for product page -->
+    <!-- <script src="js/productGallery.js"></script> -->
 
+    <!-- selector styling for delivery form -->
     <script src="js/deliveryBlockSelector.js"></script>
 
+
+    <!-- testing google search -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdp90a07RhLf3nBOIPzX6Ixlrgp0WDStY&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="js/gMapSearch.js"></script>
     </body>
     </html>
     
