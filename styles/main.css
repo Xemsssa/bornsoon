@@ -1308,17 +1308,12 @@ input[type="number"] {
 }
 
 .delivery_type:hover {
-    border: 2px solid #a46086;
+    /* border: 2px solid #a46086; */
     /* background: url("../images/selected_icon.png"); */
     /* background-position: top 10px right 10px; */
     /* background-repeat: no-repeat; */
-    margin-top: -2px;
-    padding-bottom: 2px;
-}
-
-.delivery_type:hover .delivery_icon {
-    -webkit-filter: opacity(1); 
-    filter: opacity(1);
+    /* margin-top: -2px; */
+    /* padding-bottom: 2px; */
 }
 
 .hover {
@@ -1326,21 +1321,27 @@ input[type="number"] {
     filter: opacity(1);
 }
 
+
+.delivery_type:hover .delivery_icon {
+    -webkit-filter: opacity(1); 
+    filter: opacity(1);
+}
+
+
 .paymentInfo, .packagingInfo{
     display: flex;
     margin-bottom: 20px;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px;
 }
 
 .paymentInfo_image {
-    /* margin-right: 15px; */
-    padding: 0 20px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+
 }
 
-.paymentInfo_image img {
-    width: 40px;
-}
 
 .paymentInfo_header, .packagingInfo_header {
     font-weight: bold;
@@ -1351,14 +1352,14 @@ input[type="number"] {
     font-size: 14px;
 }
 
-.paymentInfo:hover, .packagingInfo:hover {
-    border: 2px solid #a46086;
+/* .paymentInfo:hover, .packagingInfo:hover { */
+    /* border: 2px solid #a46086; */
     /* background: url("../images/selected_icon.png"); */
     /* background-position: top 10px right 10px; */
     /* background-repeat: no-repeat; */
     /* margin: -2px; */
     /* padding: 20px 0; */
-}
+/* } */
 
 .packagingInfo:hover .paymentInfo_image {
     -webkit-filter: opacity(1); 
