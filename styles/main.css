@@ -1253,6 +1253,120 @@ input[type="number"] {
     }
 } 
 
+
+
+
+/* delivery */
+
+.deliveryForm_block h6{
+    margin-bottom: 40px;
+    font-weight: bold
+}
+
+.deliveryForm_input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #dfdfdf;
+    
+}
+
+.deliveryForm_submit {
+    border: none;
+    background-color: #b56a94;
+    color: #fff;
+}
+
+.delivery_type {
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 150px; */
+    padding: 20px 0;
+    width: 50%;
+}
+
+.delivery_type:hover {
+    /* display: block; */
+    /* display: none; */
+    border: 2px solid #a46086;
+    background: url("../images/selected_icon.png");
+    background-position: top 10px right 10px;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+}
+/* 
+.delivery_selected{
+    display: none;
+    border: 2px solid #a46086;
+    background: url("../images/selected_icon.png");
+    background-position: top 10px right 10px;
+    background-repeat: no-repeat;
+} */
+
+.delivery_icon {
+    height: 40px;
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+}
+
+.paymentInfo, .packagingInfo{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.paymentInfo_image {
+    /* margin-right: 15px; */
+    padding: 0 20px;
+}
+
+.paymentInfo_header, .packagingInfo_header {
+    font-weight: bold;
+}
+
+.paymentInfo_text, .packagingInfo_text {
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+.paymentInfo: hover {
+
+}
+
+.deliveryForm_submit {
+    padding: 5px 100px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.selected {
+    border: 2px solid #a46086;
+}
+
+.deliveryForm_block .totalCost {
+    display: none;
+} 
+
+.cardNumber_input {
+    width: auto;
+}
+
+
+@media(min-width: 455px) {
+    .deliveryForm_block .totalCost  {
+        display: block;
+    }
+
+    .deliveryForm_submit {
+        width: auto;
+    }
+}
+
+
+
 /* pagination */
 
 .pagination {
