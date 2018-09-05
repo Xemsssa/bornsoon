@@ -1476,11 +1476,12 @@ input[type="number"] {
 
 .authformBlock {
     border: 2px solid #dfdfdf;
-    padding: 30px;
-    margin: 
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
 .authformBlock h5 {
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -1490,9 +1491,13 @@ input[type="number"] {
     color: #000;
 }
 
+.forgotPass:hover{
+    color: #a46086;
+}
+
 .authformBlock .footerSubscribe_button {
     text-transform: none;
-    width: 60%;
+    width: 100%;
 }
 
 .userAgree {
@@ -1503,6 +1508,19 @@ input[type="number"] {
     color: #a46086;
 }
 
+@media(min-width: 455px) {
+    .authformBlock {
+        padding: 30px;
+    }
+
+    .authformBlock h5 {
+        font-size: 24px;
+    }
+    
+    .authformBlock .footerSubscribe_button {
+        width: 60%;
+    }
+}
 
 
 /* pagination */
