@@ -654,275 +654,58 @@
     <div class="container">
         <ul class="breadcrumb">
             <li><a href="#">Bornsoon</a></li>
-            <li><a href="#">Корзина</a></li>
-            <li>Оформление заказа</li>
+            <li>Авторизация</li>
         </ul>
     </div>
 </div>
 
 <!-- breadcrumb END -->
     
-<!-- delivery form START -->
-<div class="delivery">
-    <div class="container">
-      
+<!-- START -->
+
+<div class="container">
+    <h4>Авторизация</h4>
+    <div class="bx-authform">
+    
         <div class="row">
-            <div class="col-md-8">
-                <h4 class="totalCost_bold">Оформление заказа</h4>
-
-                    <div class="deliveryForm_block">
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <h6>Укажите личные данные</h6>
-
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label for="phone">Телефон*</label>
-                            </div>
-                            <div class="col-md-9" >
-                                <input type="tel"  id="phone" class="deliveryForm_input">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="mail">Ваш e-mail*</label>
-                            </div>
-                            <div class="col-md-9">
-                                <input type="email" id="mail" class="deliveryForm_input">
-                            </div>
-                            <div class="col-md-3">
-                                <label for="name">Имя и фамилия*</label>
-                            </div>
-                            <div class="col-md-9">
-                                <input type="text" id="name" class="deliveryForm_input">
-                            </div>
-                        </div>
+            <div class="col-sm-6">
+                <h5>Для зарегистрированных пользователей</h5>
+                <p>Если у вас есть аккаунт, пожалуйста, войдите в систему.</p>
+                            <form name="form_auth" method="post" target="_top" action="/auth/?login=yes">
+                    <input type="hidden" name="AUTH_FORM" value="Y" />
+                    <input type="hidden" name="TYPE" value="AUTH" />
+                                            <input type="hidden" name="backurl" value="/auth/" />
+                                                    <div class="form-group">
+                        <label>Логин</label>
+                            <input class="form-control" type="text" name="USER_LOGIN" maxlength="255" value="" />
                     </div>
-                            
-                    <div class="deliveryForm_block">
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        
-                        <h6>Адрес доставки</h6>
-
-                        <div class="row">
-                            <div  class="col-md-3">
-                                <label for="autocomplete">Страна*</label>
-                            </div>
-                           
-
-                            <div id="locationField"  class="col-md-9">
-                                <input id="autocomplete" placeholder="Казахстан" type="text" class="deliveryForm_input"/>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <label for="town">Город*</label>
-                            </div>
-                            <div class="col-md-9">
-                                <input type="text" id="town" placeholder="Тюмень, Тюменская область" class="deliveryForm_input">
-                            </div>
-                            <div class="col-md-3">
-                                <label for="street">Улица*</label>
-                            </div>
-                            <div class="col-md-9">
-                                <input type="text" id="street" class="deliveryForm_input">
-                            </div>
-
-                            <!-- <div class="row"> -->
-                            <div class="col-md-3">
-                                <label for="house">Дом*</label>
-                            </div>
-                            <div class="col-md-3">
-                                <input type="text" id="house" class="deliveryForm_input">
-                            </div>
-                            <div class="col-md-3">
-                                <label for="appartament">Квартира*</label>
-                            </div>
-                            <div class="col-md-3">
-                                <input type="number" id="appartament" class="deliveryForm_input">
-                            </div>
-                            <!-- </div> -->
-                            <div class="col-md-3">
-                                <label for="postIndex">Индекс*</label>
-                            </div>
-                            <div class="col-md-3">
-                                <input type="text" id="postIndex" class="deliveryForm_input">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Пароль</label>
+                                            <input class="form-control" type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" />
                     </div>
-
+    
                     
-                    <div class="deliveryForm_block">
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <h6>Способ доставки</h6>
-
-                        <div class="row">
-                            <div class="col-md-3 col-xs-6 delivery_type">
-                                <div class="">
-                                    <img src="images/courierDelivery_icon.svg" class="delivery_icon" alt="courierDelivery_icon">
-                                </div>
-                                <p>Доставка курьером</p>
-                            </div>
-                                
-                            <div class="col-md-3 col-xs-6 delivery_type  delivery_selected">
-                                <div class="">
-                                    <img src="images/pocztaRossiji_icon.png" class="delivery_icon  hover" alt="pocztaRossiji_icon">
-                                </div>
-                                <p>Почта России</p>
-                            </div>
-                            <div class="col-md-3 col-xs-6 delivery_type">
-                                <div class="">
-                                    <img src="images/expressDelivery_icon.svg" class="delivery_icon" alt="expressDelivery_icon">
-                                </div>    
-                                <p>Экспресс доставка</p>
-                            </div>
-                            <div class="col-md-3 col-xs-6 delivery_type">
-                                <div class="">
-                                    <img src="images/pickup.svg" class="delivery_icon" alt="pickup">
-                                </div>
-                                <p>Самовывоз</p>
-                            </div>
+                                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" />
+                                    Запомнить меня							</label>
+                                                                <a class="pull-right" href="/auth/?forgot_password=yes" rel="nofollow">Забыли свой пароль?</a>
+                                                        </div>
                         </div>
-
+                                    <div class="form-group">
+                        <button type="submit" class="btn footerSubscribe_button" name="Login" value="Войти">Войти</button>
                     </div>
-                    <!-- </div> -->
-                    
-                    <div class="deliveryForm_block">
-                        
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <h6>Оплата</h6>
-
-                        <div class="paymentInfo_block">
-                            <a class="paymentInfo ">
-                                <div class="">
-                                    <img src="images/cash_icon.svg" class="paymentInfo_image" alt="cash_icon">
-                                </div>
-
-                                <div>
-                                    <!-- <h6>Наличые курьеру</h6> -->
-                                    <span class="paymentInfo_header">Наличые курьеру</span> 
-                                    <p class="paymentInfo_text">
-                                        Оплата производится, в момент получения заказа. Подтверждением оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</p>
-                                </div>
-                            </a>    
-        
-                            <a class="paymentInfo">
-                                <div class="">
-                                    <img src="images/paymentCard_icon.svg" class="paymentInfo_image" alt="paymentCard_icon">
-                                </div>
-                                
-                                <div>
-                                    <!-- <h6>Банковские карты</h6> -->
-                                    <span class="paymentInfo_header">Банковские карты</span>
-                                    <p class="paymentInfo_text">
-                                        Оплата производится банковской картой. Подтверждением вашей оплаты является
-                                        электронное почтовое уведомление, пришедшее после оплаты.</p>
-                                </div>
-                            </a>
-
+                </form>
                         </div>
-                    </div>
-                    <!-- </div> -->
-
-                    <div class="deliveryForm_block">
-                            
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <h6>Дисконтная карта Bornsoon</h6>
-
-                        <label for="card_number">Номер карты</label> <input type="text" id="card_number" class="deliveryForm_input cardNumber_input">
-                    </div>
-
-                    <div class="deliveryForm_block">
-                        
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <h6>Упаковка</h6>
-
-                        <div class="packagingInfo_block">
-                            <a class="packagingInfo">
-                                <div class="">
-                                    <img src="images/gift_icon.svg" class="packagingInfo_image" alt="gift_icon">
-                                </div>
-
-                                <div class="packagingInfo_desc">
-                                    <span class="packagingInfo_header">Подарочная</span>
-                                    <p class="packagingInfo_text">
-                                            Возможны различные варианты упаковки. На ваше усмотрение можно дополнить
-                                            шарами, открыткой, игрушкой. Окончательная стоимость подарочной упаковки
-                                            согласовывается с менеджером.</p>
-                                </div>
-                            </a>    
-        
-                            <a class="packagingInfo">
-                                <div class="">
-                                    <img src="images/deliveryBox.svg" class="packagingInfo_image" alt="paymentCard_icon">
-                                </div>
-                                
-                                <div class="packagingInfo_desc">
-                                    <span class="packagingInfo_header">Стандартная</span>
-                                    <p class="packagingInfo_text"></p>
-                                            Фирменный пакет Bornsoon</p>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="deliveryForm_block">
-                    
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <div class="row">
-                            <div class="col-md-3">
-                                <h6>Коментарии</h6>
-                            </div>
-                            <div class="col-md-9">
-                                <textarea class="deliveryForm_input"></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="deliveryForm_block">
-                    
-                        <!-- <hr> -->
-                        <div class="divider"></div>
-
-                        <button type="submit" name="submit" class="deliveryForm_submit totalCost_button">Подтвердить заказ</button>
-                    </div>
-
-            </div>
-
-
-                  
-            <div class="col-md-4 deliveryForm_block">
-                <div class="totalCost totalCost_border">
-
-
-                    <div class="totalCost_margin">
-                            <div class="totalCost_text">Стоимость заказа: <span class="totalCost_bold">3898 руб.</span></div>
-                            <div class="totalCost_text">Стоимость доставки: <span class="totalCost_bold">200 руб.</span></div>
-                            <div class="totalCost_total totalCost_text">Итог: <span class="totalCost_bold">4098 руб.</span></div>
-                    </div>
-                   
-
-                    <button class="totalCost_button">Вернуться в корзину</button>
+                        <div class="col-sm-6">
+                    <h3>Новый пользователь</h3>
+                    <p>После регистрации на сайте, вам будет доступно: отслеживание заказов, накопительная система скидок, индивидуальные предложения и многое другое.</p>
+                    <a class="footerSubscribe_button" href="http://bornsoon.ru/register/">Зарегистрироваться</a>
                 </div>
-
-            </div>
-        </div>
+                </div>
     </div>
-</div>
+
 <!-- END -->
 
 <!-- footer START -->
@@ -1052,12 +835,12 @@
     <!-- <script src="js/productGallery.js"></script> -->
 
     <!-- selector styling for delivery form -->
-    <script src="js/deliveryBlockSelector.js"></script>
+    <!-- <script src="js/deliveryBlockSelector.js"></script> -->
 
 
     <!-- testing google search -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdp90a07RhLf3nBOIPzX6Ixlrgp0WDStY&libraries=places&callback=initAutocomplete" async defer></script>
-    <script src="js/gMapSearch.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdp90a07RhLf3nBOIPzX6Ixlrgp0WDStY&libraries=places&callback=initAutocomplete" async defer></script> -->
+    <!-- <script src="js/gMapSearch.js"></script> -->
     </body>
     </html>
     

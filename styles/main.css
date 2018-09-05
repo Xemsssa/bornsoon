@@ -1344,7 +1344,7 @@ input[type="number"] {
 }
 
 .paymentInfo_image, .packagingInfo_image {
-    /* margin-right: 15px; */
+    margin-right: 15px;
     width: 40px;
     height: 40px;
     -webkit-filter: opacity(.1); 
