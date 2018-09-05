@@ -1467,6 +1467,42 @@ input[type="number"] {
     }
 }
 
+/* auth */
+.bx-authform h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.authformBlock {
+    border: 2px solid #dfdfdf;
+    padding: 30px;
+    margin: 
+}
+
+.authformBlock h5 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.forgotPass {
+    text-decoration: none;
+    color: #000;
+}
+
+.authformBlock .footerSubscribe_button {
+    text-transform: none;
+    width: 60%;
+}
+
+.userAgree {
+    color: #a46086;
+}
+
+.userAgree:hover{
+    color: #a46086;
+}
+
 
 
 /* pagination */
