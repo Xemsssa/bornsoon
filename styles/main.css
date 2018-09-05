@@ -1474,7 +1474,6 @@ input[type="number"] {
     padding: 15px 0;
 }
 
-
 .bx-authform h4 {
     text-transform: uppercase;
     font-weight: bold;
@@ -1539,6 +1538,17 @@ input[type="number"] {
 .checkbox label {
     margin: 5px 0;
 }
+
+
+
+/* size table */
+.sizeBlock_image {
+    width: auto;
+    max-width: 100%;
+}
+
+
+
 
 /* pagination */
 
