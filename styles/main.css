@@ -1542,14 +1542,58 @@ input[type="number"] {
 
 
 /* size table */
+.sizeBlock {
+    padding: 20px 0;
+}
+
+.sizeBlock h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
 .sizeBlock_image {
     width: auto;
     max-width: 100%;
 }
 
+.tableSize_table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 
+tr {
+    background-color: #fdfdfd;
+}
 
+
+tr:nth-child(2) {
+    background-color: #fff;
+}
+
+
+thead th{
+    background-color: #b56a94;
+    color: #fff;
+}
+
+th, td{
+    padding: 10px 0;
+    /* font-weight: bolder; */
+    padding-left: 5px;
+}
+
+.table_descr {
+    text-align: left;
+}
+
+@media (min-width: 455px) {
+    .table_descr {
+        padding-left: 30px;
+    }
+}
 /* pagination */
 
 .pagination {
