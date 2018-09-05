@@ -678,7 +678,7 @@
                         <input type="hidden" name="backurl" value="/auth/" />
                         <div class="form-group ">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 authformBlock_align">
                                     <label for="login">Логин*</label>
                                 </div>
                                 <div class="col-md-9">
@@ -688,7 +688,7 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 authformBlock_align">
                                     <label for="pass">Пароль*</label>
                                 </div>
                                 <div class="col-md-9">
@@ -707,7 +707,11 @@
                                 </label>
                             </div>
 
-                            <a class="forgotPass" href="/auth/?forgot_password=yes" rel="nofollow">Забыли пароль?</a>
+                            <div class="checkbox">
+                                <label>
+                                <a class="forgotPass" href="/auth/?forgot_password=yes" rel="nofollow">Забыли пароль?</a>
+                                </label>
+                            </div>    
                         </div>
                         <div class="form-group">
                             <button type="submit" class="footerSubscribe_button" name="Login" value="Войти">Войти</button>
@@ -724,7 +728,7 @@
                             <input type="hidden" name="backurl" value="/auth/" />
                             <div class="form-group ">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 authformBlock_align">
                                         <label for="email">Адрес e-mail*</label>
                                     </div>
                                     <div class="col-md-9">
@@ -734,7 +738,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 authformBlock_align">
                                         <label for="regName">Имя*</label>
                                     </div>
                                     <div class="col-md-9">
@@ -754,7 +758,7 @@
                                     </div>
                                 <div class="checkbox">
                                     <label>
-                                            <input type="checkbox" id="USER_AGREE" name="USER_REMEMBER" value="Y" />
+                                            <input type="checkbox" id="USER_AGREE" name="USER_AGREE" value="Y" />
                                             Принимаю условия <a href="#" class="userAgree">политики конфиденциальности</a>
                                         </label>
                                 </div>
