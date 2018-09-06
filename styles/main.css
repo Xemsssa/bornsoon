@@ -1258,6 +1258,7 @@ input[type="number"] {
 
 /* delivery */
 
+
 .deliveryForm_block h6{
     margin-bottom: 40px;
     font-weight: bold
@@ -1541,6 +1542,58 @@ input[type="number"] {
 
 
 
+/* deliveryAndPaymentBlock */
+
+.deliveryAndPayment{
+    padding: 15px 0;
+}
+
+.deliveryAndPayment h4 {
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.deliveryAndPayment h4:first-child{
+    text-transform: uppercase;
+}
+
+.deliveryAndPayment p{
+    font-size: 14px;
+    line-height: 1.35em;
+}
+
+.deliveryAndPayment h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.deliveryAndPayment_theme {
+    background-color: #b56a94;
+    color: #fff;
+    padding: 27px 20px 10px 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.paymentType_block {
+    margin-bottom: 40px;
+}
+
+.payment_type {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.paymentType_img {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
 /* size table */
 .sizeBlock {
     padding: 20px 0;
@@ -1613,45 +1666,6 @@ th, td{
 }
 
 
-/* deliveryBlock */
-.deliveryBlock h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.deliveryBlock h6{
-    font-weight: bold;
-}
-
-.deliveryBlock p {
-    font-size: 14px;
-}
-
-.deliveryBlock_color {
-    background-color: #b56a94;
-    color: #fff;
-    padding: 20px 20px 10px 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.deliveryBlock_color p {
-    font-size: 12px;
-}
-
-.payment_type {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-
-}
-
-.paymentType_img {
-    margin-right: 10px;
-    height: 40px;
-    width: 40px;
-}
 
 /* pagination */
 
