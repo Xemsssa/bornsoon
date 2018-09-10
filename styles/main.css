@@ -1743,22 +1743,141 @@ input[type="number"] {
 }
 
 .location h5 {
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom: 20px
 }
 
 .locationMap {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border: 1px solid red;   
     margin-bottom: 30px; 
 }
 
 .locationBlock {
     border: 2px solid #dfdfdf;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* .locationBlock_adress:before {
+    top: 2px;
+    position: relative;
+    margin-right: 10px;
+    content: url("../images/locGray_icon.png");
+} */
+
+.locationBlock_adress {
+    display: flex;
+    align-items: center;
+}
+
+.locationBlock_image, .locationBlock_workImage {
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    margin-right: 15px;
+
+}
+
+.locationBlock:hover {
+    background-color: #a46086;
+    color:#fff;
+    border:none;
+    padding: 22px;
+    margin-top: 0px;
+}
+ .locationBlock:hover .locationBlock_image img {
+     /* display:none; */
+    /* -webkit-filter: opacity(1, #ffffff);  */
+    /* opacity: 1; */
+
+    content: url("../images/locWht_icon.png");
+}
+
+.locationBlock:hover .locationBlock_workImage img{
+    /* display:none; */
+   /* -webkit-filter: opacity(1, #ffffff);  */
+   /* opacity: 1; */
+
+   content: url("../images/workHourWht_icon.png");
 }
 
 
+
+/* change */
+.change {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+.change h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.changeBlock_header {
+    font-weight: bold;
+}
+
+.changeBlock_punkt2 {
+    padding: 10px;
+}
+.changeBlock_punkt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    width: 25px;
+    height: 24px;
+    padding: 3px 8px;
+    /* display: block; */
+    margin-right: 10px;
+    background-color: #b56a94;
+}
+
+.changeBlock_payment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.changeBlock_theme {
+    background-color: #b56a94;
+    color: #fff;
+    padding: 20px 30px 15px 30px;
+}
+
+.changeBlock_text {
+    background-color: #fdfdfd;
+    padding: 20px 0px;
+}
+
+
+.changeBlock_text ul {
+    padding: 20px 15px;
+
+}
+
+.changeBlock_text li {
+    margin-bottom: 10px;
+    list-style: url("../images/listStyle_icon.png");
+}
+
+@media(min-width: 455px) {
+    .changeBlock_text {
+        padding: 20px 10px;
+    }
+
+}
+
+
+
+
 /* size table */
+
 .sizeBlock {
     padding: 20px 0;
 }
