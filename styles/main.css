@@ -1807,6 +1807,7 @@ input[type="number"] {
 
 
 /* change */
+
 .change {
     padding: 15px 0;
     font-size: 14px;
@@ -1832,7 +1833,7 @@ input[type="number"] {
     color: #fff;
     width: 25px;
     height: 24px;
-    padding: 3px 8px;
+    padding: 4px 8px;
     /* display: block; */
     margin-right: 10px;
     background-color: #b56a94;
@@ -1871,6 +1872,78 @@ input[type="number"] {
         padding: 20px 10px;
     }
 
+}
+
+
+
+
+/* oferta */
+.oferta {
+    padding: 15px 0;
+}
+
+.ofertaList_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.oferta h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.ofertaBlock {
+    list-style: none;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.oferta_list  {
+    margin-bottom: 25px;
+    line-height: 1.2em;
+}
+
+.oferta_list li {
+    margin-bottom: 15px;
+}
+
+.ofertaList_header div{
+    font-weight: bold;
+}
+
+.ofertaHeader_theme {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.ofertaHeader_theme {
+    padding: 0;
+}
+
+.oferta a {
+    text-decoration: none;
+    color: #000;
+}
+
+.oferta_termins li {
+    list-style: url("../images/listStyle_icon.png");
+    position: relative;
+    top: -5px;
+}
+
+.ofertaList_theme {
+    padding: 0 25px;
+
+}
+
+@media(min-width: 455px) {
+    
+    .ofertaBlock {
+        padding: 0px 30px;
+    }
 }
 
 
