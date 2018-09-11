@@ -1877,6 +1877,66 @@ input[type="number"] {
 
 
 
+/* about */
+.aboutBlock {
+    padding: 20px 0;
+}
+
+.aboutBlock h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.aboutBlock p {
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+.aboutBlock_header {
+    font-weight: bold;
+}
+
+.aboutBlock_image {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.aboutSide_image {
+    /* height: 400px; */
+    max-height: 400px;
+    margin-bottom: 30px;
+}
+
+.aboutSide_image img  {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.side_image {
+    width: 255px;
+
+    /* display: none; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
+.side_image img {
+    width: 255px;
+}
+
+@media (min-width: 580px) {
+    .side_image {
+        /* display: block; */
+    }
+}
+
+
 /* oferta */
 .oferta {
     padding: 15px 0;
@@ -1936,7 +1996,6 @@ input[type="number"] {
 
 .ofertaList_theme {
     padding: 0 25px;
-
 }
 
 @media(min-width: 455px) {
@@ -1945,6 +2004,173 @@ input[type="number"] {
         padding: 0px 30px;
     }
 }
+
+
+
+/* confid */
+.confid {
+    padding: 30px 0;
+}
+.confid h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.confidBlock {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.confidText_themed {
+    font-weight: bold;
+
+}
+
+.confidBlock_link, .confidBlock_link:hover {
+    color: #000;
+}
+
+.confidLink_themed{
+    color: #b56a94;
+}
+
+
+.confidLink_themed:hover {
+    color: #b56a94;
+}
+
+.confid li{
+    list-style: url("../images/listStyle_icon.png");
+    position: relative;
+    top: -5px;
+}
+
+
+
+/* businessMoms */
+
+.businessMoms {
+    padding: 25px 0;
+}
+
+.businessMoms h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 35px;
+
+}
+
+.businessMomsBlock {
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+.businessMoms_img {
+    margin-bottom: 20px;
+    /* height: 100px; */
+    position: relative;
+}
+
+.businessMoms_img  img{
+    max-width: 100%;
+}
+
+.businessMoms_promo {
+    position: absolute;
+    /* position: relative; */
+    /* top:-100px; */
+    bottom: 35px;
+    padding: 10px 16px;
+    background-color: #b56a94;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.businessMoms_link {
+    text-transform: uppercase;
+    color: #b56a94;
+}
+
+.businessMoms_link:hover {
+    text-transform: uppercase;
+    color: #b56a94;
+}
+
+
+
+/* vacancies */
+
+.vacancies {
+    padding: 15px 0;
+}
+
+.vacancies_header {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.vacanciesHeader_text {
+    line-height: 1.3em;
+    font-size: 14px;
+    margin-bottom: 30px;
+    /* font-weight: bold; */
+}
+
+.vacancies_image{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    max-height: 400px;
+}
+
+.vacancies_name {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.vacanciesBlock {
+    background-color: #a46086;
+    color: #fff;
+    padding: 22px 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.vacancies_requiment {
+    padding: 30px 20px;
+    background-color: #fdfdfd;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+.vacancies_requiment li {
+    list-style: url("../images/listStyle_icon.png");
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+
+.vacanciesBottom_text {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+
+.vacanciesBottom_themed {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+@media (min-width: 455px) {
+    .vacancies_requiment {
+        padding: 30px 50px;
+    }
+}
+
+
 
 
 
