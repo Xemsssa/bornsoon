@@ -30,12 +30,16 @@ $(document).ready(() =>{
         selected(e, ".packagingInfo_image");
     });
 
+    $(".locationBlock_adress").on("click",(e) => {
+        selected(e, ".packagingInfo_image");
+    });
+
 
     function selected(e, element) {
         let el = $(e.currentTarget);
 
-        el.addClass("delivery_selected");
-        el.siblings().removeClass("delivery_selected");
+        el.addClass("bx-selected");
+        el.siblings().removeClass("bx-selected");
         
         // console.log(el.children().find(".delivery_icon").css("filter", "opacity(1)"));
         el.find(element).css("filter", "opacity(1)");
